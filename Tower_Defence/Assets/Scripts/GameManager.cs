@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GameManager : MonoBehaviour {
+public class GameManager : Singleton<GameManager> {
 
-	public static GameManager instance = null;
+	
 	[SerializeField] protected GameObject spawnPoint;
 	[SerializeField] protected GameObject[] enemies;
 	[SerializeField] protected int maxEnemiesOnScreen;
@@ -14,19 +14,7 @@ public class GameManager : MonoBehaviour {
 
 	const float spawnDelay = 0.5f;
 
-	void Awake()
-    {
-		if (instance == null)
-        {
-			instance = this;
-        }
-        else if (instance != this)
-        {
-			Destroy(gameObject);
-        }
-		DontDestroyOnLoad(gameObject);
-    }
-
+	
 	void Start()
     {
 		StartCoroutine(Spawn());

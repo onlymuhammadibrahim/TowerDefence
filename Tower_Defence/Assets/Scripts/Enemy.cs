@@ -46,7 +46,7 @@ public class Enemy : MonoBehaviour {
         }
 		else if(other.tag == "Finish")
         {
-			GameManager.instance.removeEnemyFromScreen();
+			GameManager.Instance.removeEnemyFromScreen();
 			Destroy(gameObject);
         }
     }

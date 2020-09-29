@@ -103,11 +103,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64303a3859e7e9049814ef47c346807f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPoint: {fileID: 1000013464573596, guid: 4a3a08f50772e0e4fb89223882333122, type: 2}
-  enemies: []
-  maxEnemiesOnScreen: 0
-  totalEnemies: 0
-  enemiesPerSpawn: 0
   target: 0
   exitPoint: {fileID: 4000012744138164, guid: 94ba2e002eafb3741ba42774f360f881, type: 2}
   wayPoints:
